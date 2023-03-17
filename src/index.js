@@ -1,10 +1,29 @@
-import { decodeMessage } from "./converter/decodeMessage.js";
-import { encodeMessage } from "./converter/encodeMessage.js";
-import { messageOnSubmitListener } from "./listeners/onSubmit.js";
+import * as listeners from "./listeners/onSubmit.js";
+import { copyClipBoard } from "./tools/copyClipboard.js";
 
-encodeMessage("Hello");
-decodeMessage("104,101,108,108,111,32,49,50,51,33");
+const routerSwitch = () => {
+  const pageID = document.body.id;
+  switch (pageID) {
+    case "encode":
+      document
+        .querySelector("#message_form")
+        .addEventListener("submit", (event) =>
+          listeners.messageOnSubmitListener(event)
+        );
 
-document
-  .querySelector("#message_form")
-  .addEventListener("submit", (event) => messageOnSubmitListener(event));
+      document
+        .querySelector("#copy-btn")
+        .addEventListener("click", copyClipBoard);
+
+      break;
+
+    case "decode":
+      document
+        .querySelector("#decode-form")
+        .addEventListener("submit", (event) =>
+          listeners.decodeOnSubmitListener(event)
+        );
+  }
+};
+
+routerSwitch();
