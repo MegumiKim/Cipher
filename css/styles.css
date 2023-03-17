@@ -30,13 +30,15 @@ form {
   gap: 1rem;
 }
 
+#decode-input,
 textarea {
   border-radius: 0.12em;
   border: white solid px;
-  padding: 1rem;
+  padding: 0.5rem;
   height: 4rem;
   /* color-scheme: dark; */
 }
+
 #copy-btn,
 .submit {
   padding: 0.35em 1.2em;
@@ -66,6 +68,8 @@ textarea {
 
 #result {
   max-width: 100%;
+
+  /* border: 3px solid white; */
   overflow-wrap: break-word;
   word-break: break-all;
 }
@@ -108,7 +112,7 @@ a:hover {
 
   section {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 2rem;
     justify-content: space-evenly;
   }

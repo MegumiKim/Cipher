@@ -10,7 +10,7 @@ export const messageOnSubmitListener = (event) => {
 
 export const decodeOnSubmitListener = (event) => {
   event.preventDefault();
-  const input = document.querySelector("textarea").value;
+  const input = document.querySelector("#decode-input").value;
   const decodedMessage = converter.decodeMessage(input);
   document.querySelector("#result").innerText = decodedMessage;
 };
