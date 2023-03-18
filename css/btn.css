@@ -1,0 +1,35 @@
+#copy-btn,
+.submit {
+  width: 100%;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin-top: 1rem;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  font-weight: bold;
+  height: 3rem;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+#copy-btn:hover,
+.submit:hover {
+  color: #000000;
+  color: orange;
+  border-color: orange;
+}
+
+#copy-btn:disabled {
+  background-color: var(--bg);
+  color: grey;
+  border-color: grey;
+  cursor: auto;
+}
+#copy-btn:disabled:hover {
+  color: grey;
+  border-color: grey;
+}

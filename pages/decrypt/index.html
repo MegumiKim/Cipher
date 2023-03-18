@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Decode your secret message" />
+    <meta name="description" content="Encode your secret message" />
     <script defer src="../../src/index.js" type="module"></script>
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,27 +15,28 @@
     />
     <title>My Secret Message</title>
   </head>
-  <body id="decode">
-    <header >
+  <body id="decrypt">
+    <header>
       <a href="/" class="logo">Cipher</a>
       <div class="nav">
-        <a href="/" class="nav-link">Home</a>
-        <a href="../unicoding/" class="nav-link">Numeric Encryption</a>
+        <a href="/" class="nav-link">Caesar Cipher</a>
+        <a href="/" class="nav-link">Numeric Encryption</a>
       </div>
     </header>
     <main>
-      <h1>Numeric Decryption</h1>
-      <p>Decrypt a secret message</p>
-      <p>Only numeric encryption can be decrypted here.</p>
+      <h1>Decrypt secret message</h1>
+      <p>Decrypt the secret message.</p>
+
       <section>
-        <form id="decode-form" action="">
-          <h2 for="">Decrypted message</h2>
-          <input id="decode-input" type="password" placeholder="Paste encrypted (numeric) message" autocomplete="false"></input>
-          <button type="submit" class="submit">Decode</button>
+        <form id="decrypt-form" action="">
+          <h2 for="">Decrypt your message</h2>
+          <input id="decrypt-input" type="password" placeholder="Paste encrypted message" autocomplete="false"></input>
+          <button type="submit" class="submit">Decrypt</button>
         </form>
         <div class="result-wrapper">
-          <h2>Translation</h2>
+          <h2>Decrypted Message</h2>
           <div id="result"></div>
+          <!-- <button id="copy-btn">Copy</button> -->
         </div>
       </section>
     </main>

@@ -1,6 +1,4 @@
 export const decodeMessage = (codedMessage) => {
-  // console.log(codedMessage);
-
   const listOfStrings = codedMessage.split("-");
 
   let listOfCodes = [];

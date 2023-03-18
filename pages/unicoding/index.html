@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Decode your secret message" />
+    <meta name="description" content="Encode your secret message" />
     <script defer src="../../src/index.js" type="module"></script>
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,29 +15,38 @@
     />
     <title>My Secret Message</title>
   </head>
-  <body id="decode">
-    <header >
+  <body id="encode">
+    <header>
       <a href="/" class="logo">Cipher</a>
       <div class="nav">
         <a href="/" class="nav-link">Home</a>
-        <a href="../unicoding/" class="nav-link">Numeric Encryption</a>
+        <a href="../decode/" class="nav-link">Decrypt</a>
       </div>
     </header>
     <main>
-      <h1>Numeric Decryption</h1>
-      <p>Decrypt a secret message</p>
-      <p>Only numeric encryption can be decrypted here.</p>
+      <h1>Numeric Encryption</h1>
+      <p>Encrypt your secret message to a series of numbers.</p>
+      <p>Compatible with multiple languages.</p>
+      <p>
+        For stronger encryption, please use
+        <a href="/" class="inline-link">My Cipher</a>
+      </p>
+
       <section>
-        <form id="decode-form" action="">
-          <h2 for="">Decrypted message</h2>
-          <input id="decode-input" type="password" placeholder="Paste encrypted (numeric) message" autocomplete="false"></input>
-          <button type="submit" class="submit">Decode</button>
+        <form id="message_form" action="">
+          <h2 for="">Your message</h2>
+          <textarea placeholder="Type your message" minlength="2"></textarea>
+          <button type="submit" class="submit">Encode</button>
         </form>
         <div class="result-wrapper">
-          <h2>Translation</h2>
-          <div id="result"></div>
+          <h2>Encoded Message</h2>
+          <div type="password" id="result"></div>
+          <button id="copy-btn" disabled>Copy</button>
         </div>
       </section>
+      <p class="decrypt-link">
+        Decrypt the message <a href="../decode/" class="inline-link">here</a>.
+      </p>
     </main>
     <footer>Megumi.K &copy;</footer>
   </body>

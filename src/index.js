@@ -10,7 +10,6 @@ const routerSwitch = () => {
         .addEventListener("submit", (event) =>
           listeners.messageOnSubmitListener(event)
         );
-
       document
         .querySelector("#copy-btn")
         .addEventListener("click", copyClipBoard);
@@ -23,6 +22,26 @@ const routerSwitch = () => {
         .addEventListener("submit", (event) =>
           listeners.decodeOnSubmitListener(event)
         );
+      break;
+
+    case "cipher":
+      document
+        .querySelector("#cipher_form")
+        .addEventListener("submit", (event) => listeners.cipherOnSubmit(event));
+
+      document
+        .querySelector("#copy-btn")
+        .addEventListener("click", copyClipBoard);
+      break;
+
+    case "decrypt":
+      document
+        .querySelector("#decrypt-form")
+        .addEventListener("submit", (event) =>
+          listeners.decryptOnSubmit(event)
+        );
+
+      break;
   }
 };
 
