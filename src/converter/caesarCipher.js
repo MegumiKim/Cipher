@@ -32,4 +32,4 @@ export const decrypt = (message) => {
 
 const shuffle = (alphabet) =>
   [...alphabet].sort(() => Math.random() - 0.5).join("");
-// console.log(shuffle(alphabet));
+console.log(shuffle(alphabet));
