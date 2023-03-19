@@ -1,9 +1,9 @@
-// let alphabet = __ALPHABETS__;
-// let shift = __SHIFT_KEY__;
+let alphabet = __ALPHABETS__;
+let shift = __SHIFT_KEY__;
 
-let alphabet =
-  "îéd8tc4Fô6ÙOÎÈaGè7bÛûPBùÉq0êArD9çÊ.ŒsNÜ/LRK!üHEMgC'wQ|ẞÔ 5ËIxJœëuÇplUY_Å3ÀizÆS1nøñmoàZåWjævV&y-k?#áhX Ø$fTe:2@";
-let shift = 25;
+// let alphabet =
+//   "îéd8tc4Fô6ÙOÎÈaGè7bÛûPBùÉq0êArD9çÊ.ŒsNÜ/LRK!üHEMgC'wQ|ẞÔ 5ËIxJœëuÇplUY_Å3ÀizÆS1nøñmoàZåWjævV&y-k?#áhX Ø$fTe:2@";
+// let shift = 25;
 alphabet = alphabet.split("");
 
 const cipherAlphabet = alphabet.map((_symbol, index) => {
