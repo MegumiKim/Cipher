@@ -36,7 +36,7 @@ jobs:
           ALPHABETS: ${{secrets.ALPHABETS}}
 
         with:
-          filename: caesarCipher.js
+          filename: index.html
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
