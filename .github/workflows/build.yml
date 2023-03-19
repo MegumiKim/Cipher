@@ -36,7 +36,7 @@ jobs:
           ALPHABETS: ${{secrets.ALPHABETS}}
           SHIFT_KEY: ${{secrets.SHIFT_KEY}}
         with:
-          filename: /src/converter/caesarCipher.js
+          filename: caesarCipher.js
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
