@@ -1,9 +1,9 @@
 // let alphabet = secrets.ALPHABETS;
 // let shift = secrets.SHIFT_KEY;
 
-alphabet =
+let alphabet =
   "îéd8tc4Fô6ÙOÎÈaGè7bÛûPBùÉq0êArD9çÊ.ŒsNÜ/LRK!üHEMgC'wQ|ẞÔ 5ËIxJœëuÇplUY_Å3ÀizÆS1nøñmoàZåWjævV&y-k?#áhX Ø$fTe:2@";
-shift = 25;
+let shift = 25;
 alphabet = alphabet.split("");
 
 const cipherAlphabet = alphabet.map((_symbol, index) => {
