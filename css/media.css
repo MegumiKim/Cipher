@@ -1,0 +1,28 @@
+@media (min-width: 800px) {
+  .logo {
+    font-size: 4rem;
+  }
+  main {
+    max-width: none;
+    gap: 3rem;
+  }
+
+  section {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  section > * {
+    flex: 1;
+    width: 350px;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  header {
+    margin: 2rem 4rem;
+  }
+}
