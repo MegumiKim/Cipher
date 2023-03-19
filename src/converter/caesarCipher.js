@@ -11,7 +11,7 @@ const cipherAlphabet = alphabet.map((_symbol, index) => {
   return alphabet[newIndex];
 });
 
-const encrypt = (message) => {
+export const encrypt = (message) => {
   const originalMessage = message.split("");
   return originalMessage
     .map((letter) => {
@@ -22,7 +22,7 @@ const encrypt = (message) => {
     .join("");
 };
 
-const decrypt = (message) => {
+export const decrypt = (message) => {
   const originalMessage = message.split("");
   return originalMessage
     .map((letter) => {
@@ -32,7 +32,3 @@ const decrypt = (message) => {
     })
     .join("");
 };
-
-const shuffle = (alphabet) =>
-  [...alphabet].sort(() => Math.random() - 0.5).join("");
-console.log(shuffle(alphabet));

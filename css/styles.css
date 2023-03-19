@@ -15,19 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-
-#decrypt-input,
-#decode-input,
-textarea {
-  padding: 0.5rem;
-  height: 150px;
-  font-size: 1rem;
-}
 main {
   /* max-width: 500px; */
   margin: auto;
@@ -35,6 +22,9 @@ main {
   padding: 2rem;
 }
 
+h1 {
+  font-size: 3rem;
+}
 p {
   margin: 0.5rem auto;
 }
