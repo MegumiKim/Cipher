@@ -2,16 +2,16 @@ import * as converter from "../converter/index.js";
 
 export const messageOnSubmitListener = (event) => {
   event.preventDefault();
-  const input = document.querySelector("textarea");
-  const encodedMessage = converter.encodeMessage(input.value);
+  const input = document.querySelector("textarea").value;
+  const encodedMessage = converter.encodeMessage(input);
   document.querySelector("#result").innerText = encodedMessage;
-  input.value = "";
+  event.target.reset();
   document.querySelector("#copy-btn").disabled = false;
 };
 
 export const decodeOnSubmitListener = (event) => {
   event.preventDefault();
-  const input = document.querySelector("#decode-input").value;
+  const input = document.querySelector("textarea").value;
   const decodedMessage = converter.decodeMessage(input);
   document.querySelector("#result").innerText = decodedMessage;
 };
@@ -27,7 +27,7 @@ export const cipherOnSubmit = (event) => {
 };
 export const decryptOnSubmit = (event) => {
   event.preventDefault();
-  const input = document.querySelector("#decrypt-input").value;
+  const input = document.querySelector("textarea#decrypt-input").value;
   const decodedMessage = converter.decrypt(input);
   document.querySelector("#result").innerText = decodedMessage;
 };

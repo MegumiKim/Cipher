@@ -30,13 +30,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Install Dependencies
         run: npm i
-      # - name: Replace placeholders with our secret variables
-      #   uses: falnyr/replace-env-vars-action@v1.3.2
-      #   env:
-      #     ALPHABETS: ${{secrets.ALPHABETS}}
-      #     SHIFT_KEY: ${{secrets.SHIFT_KEY}}
-      #   with:
-      #     filename: ../src/converter/caesarCipher.js
+      - name: Replace placeholders with our secret variables
+        uses: falnyr/replace-env-vars-action@v1.3.2
+        env:
+          ALPHABETS: ${{secrets.ALPHABETS}}
+          SHIFT_KEY: ${{secrets.SHIFT_KEY}}
+        with:
+          filename: /src/converter/caesarCipher.js
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact

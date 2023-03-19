@@ -22,6 +22,10 @@
     margin-bottom: 0;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
   header {
     margin: 2rem 4rem;
   }
