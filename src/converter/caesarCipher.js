@@ -1,14 +1,14 @@
-let alphabet =
-  "céÙdÎaÈGôO8î4Ft67bèÛûPBù0ÉêqrA9D.NÜÊ/!HLMŒEsKçüR'gCw|ẞQÔË 5IxJœëUupÇYSÀ1WàvøVæåñ-?y#hXá f$ØTe2:@z3Ål&Æok_nmZij";
+let alphabet = secrets.ALPHABETS;
+let shift = secrets.SHIFT_KEY;
+
 alphabet = alphabet.split("");
-let shift = 25;
 
 const cipherAlphabet = alphabet.map((_symbol, index) => {
   const newIndex = (index + shift) % alphabet.length;
   return alphabet[newIndex];
 });
 
-export const encrypt = (message) => {
+const encrypt = (message) => {
   const originalMessage = message.split("");
   return originalMessage
     .map((letter) => {
@@ -19,7 +19,7 @@ export const encrypt = (message) => {
     .join("");
 };
 
-export const decrypt = (message) => {
+const decrypt = (message) => {
   const originalMessage = message.split("");
   return originalMessage
     .map((letter) => {
