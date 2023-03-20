@@ -1,10 +1,6 @@
-// let alphabet = __ALPHABETS__;
-// let shift = __SHIFT_KEY__;
+let alphabet = __ALPHABETS__;
+let shift = __SHIFT_KEY__;
 
-let shift = 25;
-
-let alphabet =
-  "7a;Eyd68ub39-c:eH. 0q_hfIK*%gn1@$JsDmoF4GLMt#25lNrOzPSpQåRwZUkÅijTXøCYvBxVWæ,ÆAØ@?!";
 alphabet = alphabet.split("");
 
 const cipherAlphabet = alphabet.map((_symbol, index) => {

@@ -29,41 +29,27 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <title>Cipher</title>
+    <title>Cipher | Encrypt</title>
   </head>
-  <body id="cipher">
+  <body id="home">
     <header>
       <a href="/" class="logo">Cipher</a>
-      <div class="nav">
-        <a href="pages/decrypt/" class="nav-link">Decrypt</a>
-        <a href="pages/unicoding/" class="nav-link">Unicoding</a>
-      </div>
+      <!-- <div class="nav">
+        <a href="pages/unicoding/" class="nav-link">Switch to Unicoding</a>
+      </div> -->
     </header>
-    <main>
+    <main class="welcome">
       <h1>Welcome to Cipher</h1>
-      <p>Encrypt your secret message.</p>
-      <p>Compatible with latin alphabets.</p>
-      <p>
-        Please use
-        <a href="./pages/unicoding/" class="inline-link">Unicoding</a>
-        for other languages.
-      </p>
-      <section>
-        <form id="cipher-form" action="">
-          <h2 for="">Your message</h2>
-          <textarea placeholder="Type your message"></textarea>
-          <button type="submit" class="submit">Encrypt</button>
-        </form>
-        <div class="result-wrapper">
-          <h2>Encrypted Message</h2>
-          <div id="result"></div>
-          <button id="copy-btn" disabled>Copy</button>
-        </div>
-      </section>
-      <p class="decrypt-link">
-        Decrypt the message
-        <a href="./pages/decrypt/" class="inline-link">here</a>.
-      </p>
+      <p>Please chose your encryption method</p>
+
+      <div class="option">
+        <p>Strong encryption for English/Norwegian:</p>
+        <a href="/pages/encrypt/" class="inline-link">Cipher Encryption</a>.
+      </div>
+      <div class="option">
+        <p>Numeric encoding for multiple language & keyboards:</p>
+        <a href="/pages/unicoding/" class="inline-link">Cipher Unicoding</a>.
+      </div>
     </main>
     <footer>Megumi.K &copy;</footer>
   </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Decrypt your secret message" />
+    <meta name="description" content="Encrypt your secret message" />
     <script defer src="../../src/index.js" type="module"></script>
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,9 +29,9 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <title>Cipher</title>
+    <title>Cipher | Encrypt</title>
   </head>
-  <body id="decrypt">
+  <body id="cipher">
     <header>
       <a href="/" class="logo">Cipher</a>
       <div class="nav">
@@ -39,26 +39,27 @@
       </div>
     </header>
     <main>
-      <h1>Decryption</h1>
-      <p>Decrypt a message.</p>
-
+      <h1>Encryption</h1>
+      <p>Encrypt your secret message.</p>
+      <p>Strong encryption for latin alphabets.</p>
+      <p>
+        Decrypt the message
+        <a href="../decrypt/" class="inline-link">here</a>.
+      </p>
       <section>
-        <form id="decrypt-form" action="">
-          <h2 for="">Encrypted message</h2>
-          <textarea
-            id="decrypt-input"
-            placeholder="Paste encrypted message"
-            autocomplete="false"
-          ></textarea>
-          <button type="submit" class="submit">Decrypt</button>
+        <form id="cipher-form" action="">
+          <h2 for="">Your message</h2>
+          <textarea placeholder="Type your message"></textarea>
+          <button type="submit" class="submit">Encrypt</button>
         </form>
         <div class="result-wrapper">
-          <h2>Plain Text</h2>
+          <h2>Encrypted Message</h2>
           <div id="result"></div>
+          <button id="copy-btn" disabled>Copy</button>
         </div>
       </section>
       <p class="decrypt-link">
-        <a href="../encrypt/" class="inline-link">Back to Encrypt</a>
+        <a href="../decrypt/" class="inline-link"> Decrypt</a>.
       </p>
     </main>
     <footer>Megumi.K &copy;</footer>
