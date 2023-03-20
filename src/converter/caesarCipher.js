@@ -29,7 +29,6 @@ export const decrypt = (message) => {
 
   listOfLetters.forEach((letter) => {
     const index = cipherAlphabet.indexOf(letter);
-    console.log(letter, index);
     if (index === -1) {
       translation += " ";
     } else {
@@ -38,14 +37,3 @@ export const decrypt = (message) => {
   });
   return translation;
 };
-
-// export const decrypt = (message) => {
-//   const originalMessage = message.split("");
-//   return originalMessage
-//     .map((letter) => {
-//       const index = cipherAlphabet.indexOf(letter);
-//       const newLetter = alphabet[index];
-//       return newLetter;
-//     })
-//     .join("");
-// };
