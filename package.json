@@ -1,7 +1,7 @@
 {
   "name": "cipher",
   "version": "1.0.0",
-  "description": "Simple message encrypting application",
+  "description": "Simple message encryption application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,7 @@
     "url": "git+https://github.com/MegumiKim/unicode.git"
   },
   "keywords": [
-    "Caesar",
-    "Cipher",
+    "Caesar Cipher",
     "encryption"
   ],
   "author": "Megumi Kimura (kimuramegumi@gmail.com)",
@@ -20,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/MegumiKim/unicode/issues"
   },
-  "homepage": "https://github.com/MegumiKim/unicode#readme",
-  "devDependencies": {
-    "dotenv": "^16.0.3"
-  }
+  "homepage": "https://github.com/MegumiKim/unicode#readme"
 }

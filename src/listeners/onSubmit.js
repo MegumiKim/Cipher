@@ -28,6 +28,7 @@ export const cipherOnSubmit = (event) => {
   event.target.reset();
   document.querySelector("#copy-btn").disabled = false;
 };
+
 export const decryptOnSubmit = (event) => {
   event.preventDefault();
   const rawInput = document.querySelector("textarea#decrypt-input").value;
