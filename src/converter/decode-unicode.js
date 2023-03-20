@@ -10,9 +10,10 @@ export const decodeMessage = (codedMessage) => {
   });
   const decodedMessage = listOfCodes.join("");
 
-  if (decodedMessage.length > 2) {
+  if (decodedMessage.length >= 2) {
     return decodedMessage;
   } else {
+    console.log(decodedMessage.length);
     return "Error in input";
   }
 };
