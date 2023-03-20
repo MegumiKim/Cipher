@@ -1,4 +1,7 @@
 @media (min-width: 800px) {
+  .body {
+    font-size: 22px;
+  }
   .logo {
     font-size: 4rem;
   }
