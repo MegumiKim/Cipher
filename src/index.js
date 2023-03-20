@@ -1,5 +1,6 @@
 import * as listeners from "./listeners/onSubmit.js";
 import { copyClipBoard } from "./tools/copyClipboard.js";
+import { shuffle } from "./tools/shuffle.js";
 
 const routerSwitch = () => {
   const pageID = document.body.id;

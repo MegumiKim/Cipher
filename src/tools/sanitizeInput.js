@@ -1,6 +1,6 @@
 export const sanitizeInput = (input) => {
   try {
-    return String(input);
+    return input.toString();
   } catch (e) {
     throw new Error(e);
   }
