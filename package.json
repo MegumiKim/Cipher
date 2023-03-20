@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MegumiKim/unicode.git"
+    "url": "git+https://github.com/MegumiKim/Cipher.git"
   },
   "keywords": [
     "Caesar Cipher",
     "encryption"
   ],
-  "author": "Megumi Kimura (kimuramegumi@gmail.com)",
+  "author": "Megumi Kimura <kimuramegumi@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MegumiKim/unicode/issues"
+    "url": "https://github.com/MegumiKim/Cipher/issues"
   },
-  "homepage": "https://github.com/MegumiKim/unicode#readme"
+  "homepage": "https://github.com/MegumiKim/Cipher#readme"
 }
