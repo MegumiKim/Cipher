@@ -38,37 +38,40 @@
       <a href="/" class="logo">Cipher</a>
     </header>
     <main>
-      <h1>Cipher Encryption</h1>
-      <p>Encrypt your secret message.</p>
-      <p>Compatible with English & Norwegian alphabets.</p>
-
+      <div class="welcome">
+        <h1>Cipher Encryption</h1>
+        <p>Texts encryption for English & Norwegian alphabets.</p>
+      </div>
       <div class="forms-wrapper">
-        <form id="encrypt-form" action="">
+        <div id="encrypt-form" class="form">
           <h2 for="">Encrypt</h2>
           <div class="input-wrapper">
             <textarea id="encrypt-input" placeholder="Type your message">
             </textarea>
             <div class="user-alert">Copied!</div>
-            <div class="copy-btn"><i class="fa-regular fa-copy"></i></div>
+            <button id="erase-btn"><i class="fa-solid fa-eraser"></i></button>
+            <button id="copy-btn" disabled>
+              <i class="fa-regular fa-copy"></i>
+            </button>
           </div>
-          <button type="submit" class="submit" id="Encrypt-btn">
+          <button disabled type="submit" class="submit" id="encrypt-btn">
             Encrypt <i class="fa-solid fa-key"></i>
           </button>
-        </form>
+        </div>
         <div class="circle-wrapper">
           <i class="fa-solid fa-down-long"></i>
         </div>
-        <form id="decrypt-form" action="">
+        <div id="decrypt-form" class="form">
           <h2 for="">Decrypt</h2>
           <textarea
             id="decrypt-input"
             placeholder="Paste encrypted message"
             autocomplete="false"
           ></textarea>
-          <button type="submit" class="submit" id="Decrypt-btn">
+          <button disabled type="submit" class="submit" id="decrypt-btn">
             Decrypt <i class="fa-solid fa-unlock-keyhole"></i>
           </button>
-        </form>
+        </div>
       </div>
     </main>
     <footer>Megumi.K &copy;</footer>

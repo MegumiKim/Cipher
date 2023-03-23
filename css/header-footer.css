@@ -11,14 +11,13 @@ header {
   align-items: center;
   margin: 2rem 2rem;
 }
-.nav > * {
+/* .nav > * {
   display: block;
   text-align: end;
   margin-bottom: 0.5rem;
-}
+} */
 
 .logo {
   font-size: 3rem;
   font-family: "Cinzel Decorative", cursive;
-  /* color: var(--orange); */
 }

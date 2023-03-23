@@ -1,14 +1,12 @@
-import * as ui from "./ui/ui.js";
+import { decryptionSetup } from "./setup/decryption.js";
+import { encryptionSetup } from "./setup/encryption.js";
 
 const routerSwitch = () => {
   const pageID = document.body.id;
   switch (pageID) {
     case "cipher":
-      ui.cipherForm();
-      ui.decryptForm();
-      ui.encryptInput();
-      ui.decryptInput();
-      ui.copyBtn();
+      encryptionSetup();
+      decryptionSetup();
       break;
   }
 };

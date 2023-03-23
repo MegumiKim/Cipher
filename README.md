@@ -2,12 +2,12 @@
 
 https://cipher.kimuramegumi.site/
 
-![Homepage Preview](./asset/img/site-screenshot.png)
+![Homepage Preview](./asset/img/screen.png)
 
 ## Brief
 
-Cipher is a message encryption interface where users can choose method to encrypt/decrypt a message.
-Personal fun project.
+Cipher is an interface where users can encrypt/decrypt a message.
+Personal mini project.
 
 ## Built With
 

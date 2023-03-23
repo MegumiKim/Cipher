@@ -1,26 +1,22 @@
 import * as encryption from "../encryption/caesarCipher.js";
 import { sanitizeInput } from "../tools/sanitizeInput.js";
+import { toggleDisableBtn } from "../tools/toggleDisable.js";
 
-export const cipherOnSubmit = (event) => {
-  event.preventDefault();
+export const encryptOnClick = (event) => {
   const input = document.querySelector("textarea#encrypt-input");
   const cleanInput = sanitizeInput(input.value);
   const encryptedMessage = encryption.encrypt(cleanInput);
   input.value = encryptedMessage;
-
-  const submitBtn = document.querySelector("button#Encrypt-btn");
-  submitBtn.innerText = "Encrypted!";
-  submitBtn.disabled = true;
+  event.target.innerText = "Encrypted!";
+  toggleDisableBtn("copy-btn", false);
+  toggleDisableBtn("encrypt-btn", true);
 };
 
-export const decryptOnSubmit = (event) => {
-  event.preventDefault();
+export const decryptOnClick = (event) => {
   const input = document.querySelector("textarea#decrypt-input");
   const cleanInput = sanitizeInput(input.value);
   const decryptedMessage = encryption.decrypt(cleanInput);
   input.value = decryptedMessage;
-
-  const submitBtn = document.querySelector("button#Decrypt-btn");
-  submitBtn.innerText = "Decrypted!";
-  submitBtn.disabled = true;
+  event.target.innerText = "Decrypted!";
+  event.target.disabled = true;
 };
