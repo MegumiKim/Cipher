@@ -2,16 +2,16 @@
   font-size: 1rem;
   width: 100%;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
+  border: 0.1em solid var(--white);
   margin-top: 1rem;
   border-radius: 0.12em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white);
   font-weight: bold;
   height: 3rem;
   text-align: center;
   transition: all 0.2s;
-  background-color: #000000;
+  background-color: var(--black);
   cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ button:hover {
 button:disabled {
   /* .submit:disabled,
 #copy-btn:disabled { */
-  background-color: var(--bg);
+  background: none;
   color: grey;
   border-color: grey;
   cursor: auto;
