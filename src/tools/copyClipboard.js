@@ -1,6 +1,7 @@
 export const copyClipBoard = async () => {
-  const copyText = document.querySelector("#result").innerText;
-  const copyBtn = document.querySelector("#copy-btn");
-  navigator.clipboard.writeText(copyText);
-  copyBtn.innerText = "Copied!";
+  const input = document.querySelector("textarea#encrypt-input");
+  const userAlert = document.querySelector(".user-alert");
+  navigator.clipboard.writeText(input.value);
+  userAlert.style.display = "block";
+  input.value = "";
 };

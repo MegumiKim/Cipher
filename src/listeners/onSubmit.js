@@ -1,38 +1,26 @@
-import * as converter from "../converter/index.js";
+import * as encryption from "../encryption/caesarCipher.js";
 import { sanitizeInput } from "../tools/sanitizeInput.js";
-
-export const messageOnSubmitListener = (event) => {
-  event.preventDefault();
-  const rawInput = document.querySelector("textarea").value;
-  const cleanInput = sanitizeInput(rawInput);
-  const encodedMessage = converter.encodeMessage(cleanInput);
-  document.querySelector("#result").innerText = encodedMessage;
-  event.target.reset();
-  document.querySelector("#copy-btn").disabled = false;
-};
-
-export const decodeOnSubmitListener = (event) => {
-  event.preventDefault();
-  const rawInput = document.querySelector("textarea").value;
-  const cleanInput = sanitizeInput(rawInput);
-  const decodedMessage = converter.decodeMessage(cleanInput);
-  document.querySelector("#result").innerText = decodedMessage;
-};
 
 export const cipherOnSubmit = (event) => {
   event.preventDefault();
-  const rawInput = document.querySelector("textarea").value;
-  const cleanInput = sanitizeInput(rawInput);
-  const encodedMessage = converter.encrypt(cleanInput);
-  document.querySelector("#result").innerText = encodedMessage;
-  event.target.reset();
-  document.querySelector("#copy-btn").disabled = false;
+  const input = document.querySelector("textarea#encrypt-input");
+  const cleanInput = sanitizeInput(input.value);
+  const encryptedMessage = encryption.encrypt(cleanInput);
+  input.value = encryptedMessage;
+
+  const submitBtn = document.querySelector("button#Encrypt-btn");
+  submitBtn.innerText = "Encrypted!";
+  submitBtn.disabled = true;
 };
 
 export const decryptOnSubmit = (event) => {
   event.preventDefault();
-  const rawInput = document.querySelector("textarea#decrypt-input").value;
-  const cleanInput = sanitizeInput(rawInput);
-  const decodedMessage = converter.decrypt(cleanInput);
-  document.querySelector("#result").innerText = decodedMessage;
+  const input = document.querySelector("textarea#decrypt-input");
+  const cleanInput = sanitizeInput(input.value);
+  const decryptedMessage = encryption.decrypt(cleanInput);
+  input.value = decryptedMessage;
+
+  const submitBtn = document.querySelector("button#Decrypt-btn");
+  submitBtn.innerText = "Decrypted!";
+  submitBtn.disabled = true;
 };

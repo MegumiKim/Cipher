@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Encrypt your secret message" />
-    <script defer src="src/index.js" type="module"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="/src/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/175ecb4e25.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cutive+Mono&display=swap"
       rel="stylesheet"
@@ -29,28 +31,45 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <title>Cipher | Encrypt</title>
+    <title>Cipher</title>
   </head>
-  <body id="home">
+  <body id="cipher">
     <header>
       <a href="/" class="logo">Cipher</a>
-      <!-- <div class="nav">
-        <a href="pages/unicoding/" class="nav-link">Switch to Unicoding</a>
-      </div> -->
     </header>
-    <main class="welcome">
-      <h1>Welcome to Cipher</h1>
-      <lead>Please choose your encryption method.</lead>
-      <p>...</p>
-      <div class="option">
-        <p>Strong encryption for English/Norwegian:</p>
-        <a href="/pages/encrypt/" class="inline-link">Cipher Encryption</a>
+    <main>
+      <h1>Cipher Encryption</h1>
+      <p>Encrypt your secret message.</p>
+      <p>Compatible with English & Norwegian alphabets.</p>
+
+      <div class="forms-wrapper">
+        <form id="encrypt-form" action="">
+          <h2 for="">Encrypt</h2>
+          <div class="input-wrapper">
+            <textarea id="encrypt-input" placeholder="Type your message">
+            </textarea>
+            <div class="user-alert">Copied!</div>
+            <div class="copy-btn"><i class="fa-regular fa-copy"></i></div>
+          </div>
+          <button type="submit" class="submit" id="Encrypt-btn">
+            Encrypt <i class="fa-solid fa-key"></i>
+          </button>
+        </form>
+        <div class="circle-wrapper">
+          <i class="fa-solid fa-down-long"></i>
+        </div>
+        <form id="decrypt-form" action="">
+          <h2 for="">Decrypt</h2>
+          <textarea
+            id="decrypt-input"
+            placeholder="Paste encrypted message"
+            autocomplete="false"
+          ></textarea>
+          <button type="submit" class="submit" id="Decrypt-btn">
+            Decrypt <i class="fa-solid fa-unlock-keyhole"></i>
+          </button>
+        </form>
       </div>
-      <div class="option">
-        <p>Numeric encoding for multiple language & keyboards:</p>
-        <a href="/pages/unicoding/" class="inline-link">Cipher Unicoding</a>
-      </div>
-      <p>...</p>
     </main>
     <footer>Megumi.K &copy;</footer>
   </body>

@@ -7,7 +7,6 @@
   margin-top: 1rem;
   border-radius: 0.12em;
   text-decoration: none;
-  /* font-weight: 300; */
   color: #ffffff;
   font-weight: bold;
   height: 3rem;
@@ -24,13 +23,49 @@
   border-color: orange;
 }
 
+.submit:disabled,
 #copy-btn:disabled {
   background-color: var(--bg);
   color: grey;
   border-color: grey;
   cursor: auto;
 }
+.submit:disabled:hover,
 #copy-btn:disabled:hover {
   color: grey;
   border-color: grey;
+}
+
+.switch-btn {
+  color: orange;
+  border: solid 1px orange;
+  padding: 3% 5%;
+  margin: 1rem auto;
+  margin-right: 0;
+  display: block;
+  max-width: fit-content;
+}
+
+.circle-wrapper {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.fa-circle-down {
+  font-size: 2rem;
+}
+
+.copy-btn {
+  background-color: var(--bg);
+  border: none;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.copy-btn:hover {
+  color: orange;
 }
