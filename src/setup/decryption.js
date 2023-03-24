@@ -6,11 +6,11 @@ export const decryptionSetup = () => {
 
   submit.addEventListener("click", (event) => listeners.decryptOnClick(event));
 
-  input.addEventListener("keyup", () => {
-    if (input.value.length > 1) {
-      submit.disabled = false;
-    } else {
-      submit.disabled = true;
-    }
+  input.addEventListener("keyup", (event) => {
+    listeners.decryptOnPaste(event);
+  });
+
+  input.addEventListener("paste", (event) => {
+    listeners.decryptOnPaste(event);
   });
 };
