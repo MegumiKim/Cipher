@@ -1,4 +1,4 @@
-import * as listeners from "../listeners/onClick.js";
+import * as listeners from "../listeners/index.js";
 
 export const decryptionSetup = () => {
   const input = document.querySelector("textarea#decrypt-input");
