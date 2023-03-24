@@ -7,22 +7,25 @@ export const encryptionSetup = () => {
   const decryptInput = document.querySelector("textarea#decrypt-input");
   const decryptBtn = document.querySelector("button#decrypt-btn");
   const userAlert = document.querySelector(".user-alert");
+  const eraseBtn = document.querySelector("#erase-btn");
+
+  input.value = "";
 
   encryptBtn.addEventListener("click", (event) =>
     listeners.encryptOnClick(event)
   );
-  document.querySelector("#erase-btn").addEventListener("click", () => {
+  eraseBtn.addEventListener("click", () => {
     input.value = "";
   });
   copyBtn.addEventListener("click", listeners.copyClipBoard);
 
   input.addEventListener("keyup", () => {
     if (input.value.length > 1) {
-      encryptBtn.disabled = false;
-      encryptBtn.innerHTML = 'Encrypt <i class="fa-solid fa-key"></i>';
-
       copyBtn.disabled = true;
       userAlert.style.display = "none";
+
+      encryptBtn.disabled = false;
+      encryptBtn.innerHTML = 'Encrypt <i class="fa-solid fa-key"></i>';
 
       decryptInput.value = "";
       decryptBtn.innerHTML =
