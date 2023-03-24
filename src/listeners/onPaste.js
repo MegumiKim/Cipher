@@ -20,9 +20,5 @@ export const encryptOnPaste = (event) => {
 };
 
 export const decryptOnPaste = (event) => {
-  if (event.target.value.length > 1) {
-    decryptBtn.disabled = false;
-  } else {
-    decryptBtn.disabled = true;
-  }
+  decryptBtn.disabled = false;
 };
