@@ -11,12 +11,13 @@ span {
   height: auto;
   position: absolute;
   left: 50%;
-  top: -70%;
+  top: -20px;
   transform: translate(-50%, 5%);
   color: var(--white);
   font-size: 0.8rem;
   background-color: var(--bg);
   padding: 5px;
+  border-radius: 5%;
 }
 
 /* CSS animation */
