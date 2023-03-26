@@ -5,7 +5,7 @@ const decryptBtn = document.querySelector("button#decrypt-btn");
 const userAlert = document.querySelector(".user-alert");
 
 export const encryptOnPaste = (event) => {
-  if (event.target.value.length > 1) {
+  if (event.target.value.length > 0) {
     copyBtn.disabled = true;
     userAlert.style.display = "none";
 

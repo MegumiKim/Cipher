@@ -26,32 +26,12 @@
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+  display: block;
 }
 
 #erase-btn {
   top: 0;
   bottom: unset;
-}
-#erase-btn:hover,
-#copy-btn:hover,
-button:hover {
-  color: orange;
-  border-color: orange;
-}
-#erase-btn:disabled,
-#copy-btn:disabled,
-button:disabled {
-  /* .submit:disabled,
-#copy-btn:disabled { */
-  background: none;
-  color: grey;
-  border-color: grey;
-  cursor: auto;
-}
-
-button:disabled:hover {
-  color: grey;
-  border-color: grey;
 }
 
 .circle-wrapper {

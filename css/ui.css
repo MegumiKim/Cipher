@@ -1,0 +1,61 @@
+.helper:hover span {
+  display: block;
+  transform-origin: 100% 0%;
+  animation: fadeIn 0.3s ease;
+}
+
+span {
+  display: none;
+  font-family: sans-serif;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: -70%;
+  transform: translate(-50%, 5%);
+  color: var(--white);
+  font-size: 0.8rem;
+  background-color: var(--bg);
+  padding: 5px;
+}
+
+/* CSS animation */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#erase-btn:hover,
+#copy-btn:hover,
+button:hover {
+  color: orange;
+  border-color: orange;
+}
+#erase-btn:disabled,
+#copy-btn:disabled,
+button:disabled {
+  /* .submit:disabled,
+#copy-btn:disabled { */
+  background: none;
+  color: grey;
+  border-color: grey;
+  cursor: auto;
+}
+
+button:disabled:hover {
+  color: grey;
+  border-color: grey;
+}

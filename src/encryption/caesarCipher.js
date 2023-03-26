@@ -9,31 +9,27 @@ const cipherAlphabet = alphabet.map((_symbol, index) => {
 });
 
 export const encrypt = (message) => {
-  const listOfLetters = message.split("");
-  let translation = "";
-
-  listOfLetters.forEach((letter) => {
-    const index = alphabet.indexOf(letter);
-    if (index === -1) {
-      translation += "&";
-    } else {
-      translation += cipherAlphabet[index];
-    }
-  });
-  return translation;
+  message = btoa(message).split("");
+  return message
+    .map((letter) => {
+      const index = alphabet.indexOf(letter);
+      const newLetter = cipherAlphabet[index];
+      return newLetter;
+    })
+    .join("");
 };
 
 export const decrypt = (message) => {
-  const listOfLetters = message.split("");
-  let translation = "";
-
-  listOfLetters.forEach((letter) => {
-    const index = cipherAlphabet.indexOf(letter);
-    if (index === -1) {
-      translation += " ";
-    } else {
-      translation += alphabet[index];
-    }
-  });
-  return translation;
+  message = message.split("");
+  const decrypted = message
+    .map((letter) => {
+      const index = cipherAlphabet.indexOf(letter);
+      const newLetter = alphabet[index];
+      return newLetter;
+    })
+    .join("");
+  if (decrypted) {
+    return atob(decrypted);
+  }
+  throw new Error();
 };
