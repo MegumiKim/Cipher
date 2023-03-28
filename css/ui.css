@@ -10,8 +10,6 @@ span {
   text-align: center;
   height: auto;
   position: absolute;
-  left: 50%;
-  top: -20px;
   transform: translate(-50%, 5%);
   color: var(--white);
   font-size: 0.8rem;

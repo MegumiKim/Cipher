@@ -19,10 +19,10 @@
 #copy-btn {
   background: none;
   border: none;
-  margin: 15px;
-  position: absolute;
+  /* margin: 15px; */
+  /* position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0; */
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -42,3 +42,15 @@
 .fa-circle-down {
   font-size: 2rem;
 }
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  position: relative;
+}
+/* 
+.fa-solid {
+  position: relative;
+} */
