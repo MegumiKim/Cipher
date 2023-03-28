@@ -20,4 +20,5 @@ textarea {
   display: grid; */
   display: flex;
   border: 1px solid white;
+  min-height: 80px;
 }
