@@ -1,24 +1,39 @@
+.forms-wrapper {
+  display: flex;
+  flex-direction: column;
+  outline: 3px solid white;
+  border-radius: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.switch-btn-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.result-wrapper {
+  position: relative;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
 
-textarea {
+textarea,
+#result {
+  flex: 1;
+  height: 5rem;
+  border: none;
+  outline: none;
   padding: 0.5rem;
-  /* height: 80px; */
   font-size: 1rem;
   color-scheme: dark;
-  border: none;
   background-color: var(--bg);
   flex: auto;
-  /* border: 3px solid white; */
-}
-
-.input-wrapper {
-  /* position: relative;
-  display: grid; */
-  display: flex;
-  border: 1px solid white;
-  min-height: 80px;
+  text-indent: 0.5rem;
 }
