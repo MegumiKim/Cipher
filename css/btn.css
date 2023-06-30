@@ -11,11 +11,11 @@
   background: none;
   margin: auto;
 }
+
 #toggle:hover {
   color: orange;
 }
 
-/* #erase-btn, */
 #copy-btn {
   background: none;
   border: none;
@@ -28,29 +28,3 @@
   cursor: pointer;
   display: block;
 }
-
-/* #erase-btn {
-  top: 0;
-  bottom: unset;
-} */
-
-/* .circle-wrapper {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-.fa-circle-down {
-  font-size: 2rem;
-} */
-
-/* .btn-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 5px;
-  position: relative;
-} */
-/* 
-.fa-solid {
-  position: relative;
-} */

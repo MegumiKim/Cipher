@@ -6,7 +6,7 @@ const resultsDisplay = document.querySelector("#result");
 const handleInput = debounce((event, mode) => {
   let cleanInput = sanitizeInput(event.target.value);
 
-  if (mode === "Encrypt") {
+  if (mode === "encrypt") {
     const encryptedMessage = encrypt(cleanInput);
     resultsDisplay.innerHTML = encryptedMessage;
   } else {

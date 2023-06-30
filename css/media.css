@@ -2,29 +2,19 @@
   .body {
     font-size: 22px;
   }
-  .logo {
-    font-size: 4rem;
-  }
+
   main {
     max-width: none;
     gap: 3rem;
   }
 
-  .welcome {
-    margin: 2rem 0;
-  }
   .forms-wrapper {
     flex-direction: row;
   }
 
-  /* .input-wrapper,
-  .result-wrapper {
-    max-width: 50%;
-  } */
-
   textarea,
   #result {
-    height: 20vh;
+    height: 30vh;
     min-width: 300px;
     max-width: min-content;
   }
@@ -33,16 +23,6 @@
     font-size: 3rem;
   }
 
-  header {
-    margin: 2rem 4rem;
-  }
-
-  .fa-down-long {
-    transform: rotate(-90deg);
-    margin: 1rem;
-  }
-
-  #erase-btn,
   #copy-btn {
     font-size: 1.2rem;
   }

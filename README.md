@@ -2,7 +2,7 @@
 
 https://cipher.kimuramegumi.site/
 
-![Homepage Preview](./asset/img/screen.png)
+![Homepage Preview](./asset/img/cipher.png)
 
 ## Brief
 
