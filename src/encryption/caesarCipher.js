@@ -10,6 +10,7 @@ const cipherAlphabet = alphabet.map((_symbol, index) => {
 
 export const encrypt = (message) => {
   message = btoa(message).split("");
+
   return message
     .map((letter) => {
       const index = alphabet.indexOf(letter);
@@ -21,15 +22,19 @@ export const encrypt = (message) => {
 
 export const decrypt = (message) => {
   message = message.split("");
-  const decrypted = message
-    .map((letter) => {
-      const index = cipherAlphabet.indexOf(letter);
-      const newLetter = alphabet[index];
-      return newLetter;
-    })
-    .join("");
-  if (decrypted) {
-    return atob(decrypted);
+  if (message.length > 1) {
+    const decrypted = message
+      .map((letter) => {
+        const index = cipherAlphabet.indexOf(letter);
+        const newLetter = alphabet[index];
+        return newLetter;
+      })
+      .join("");
+    if (decrypted) {
+      return atob(decrypted);
+    }
+    throw new Error();
+  } else {
+    return "";
   }
-  throw new Error();
 };

@@ -2,41 +2,27 @@
   .body {
     font-size: 22px;
   }
-  .logo {
-    font-size: 4rem;
-  }
+
   main {
     max-width: none;
     gap: 3rem;
   }
 
-  .welcome {
-    margin: 2rem 0;
-  }
   .forms-wrapper {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    flex-direction: row;
   }
 
-  textarea {
-    height: 150px;
+  textarea,
+  #result {
+    height: 30vh;
     min-width: 300px;
+    max-width: min-content;
   }
 
   h1 {
     font-size: 3rem;
   }
 
-  header {
-    margin: 2rem 4rem;
-  }
-
-  .fa-down-long {
-    transform: rotate(-90deg);
-    margin: 1rem;
-  }
-
-  #erase-btn,
   #copy-btn {
     font-size: 1.2rem;
   }

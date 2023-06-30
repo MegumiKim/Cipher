@@ -36,63 +36,54 @@
     </script>
     <title>Cipher</title>
   </head>
-  <body id="cipher">
-    <header>
-      <a href="/" class="logo">Cipher</a>
-    </header>
+  <body>
     <main>
       <div class="welcome">
         <h1>Cipher Encryption</h1>
       </div>
-      <div class="forms-wrapper">
-        <div id="encrypt-form" class="form">
-          <h2 for="">Encrypt</h2>
+      <section>
+        <div class="switch-btn-wrapper">
+          <h2 class="input-label label">Normal Text</h2>
+            <button id="toggle" aria-label="switch" >
+              <i class="fa-solid fa-repeat"></i>
+            </button>
+          <h2 class="result-label">Encrypted Text</h2>
+        </div>
+        <div class="forms-wrapper">
           <div class="input-wrapper">
             <textarea
-              id="encrypt-input"
-              placeholder="Type your message"
-              autocomplete="false"
-            >
-            </textarea>
-            <div class="btn-wrapper">
-              <div class="user-alert">Copied!</div>
-              <button class="helper" id="erase-btn" aria-label="delete input">
-                <i class="fa-solid fa-eraser"></i>
-                <span class="popuptext" id="delete-popup">Delete</span>
-              </button>
-              <button
-                class="helper"
-                id="copy-btn"
-                aria-label="copy input"
-                disabled
-              >
-                <i class="fa-regular fa-copy"></i>
-                <span class="popuptext" id="copy-popup">copy</span>
-              </button>
-            </div>
-          </div>
-          <button disabled type="submit" class="submit" id="encrypt-btn">
-            Encrypt <i class="fa-solid fa-key"></i>
-          </button>
-        </div>
-        <div class="circle-wrapper">
-          <i class="fa-solid fa-down-long"></i>
-        </div>
-        <div id="decrypt-form" class="form">
-          <h2 for="">Decrypt</h2>
-          <div class="input-wrapper">
-            <textarea
-              id="decrypt-input"
-              placeholder="Paste encrypted message"
-              autocomplete="false"
+              name=""
+              id="userInput"
+              cols="30"
+              rows="10"
+              placeholder="Type Your message"
             ></textarea>
           </div>
-          <button disabled type="submit" class="submit" id="decrypt-btn">
-            Decrypt <i class="fa-solid fa-unlock-keyhole"></i>
-          </button>
+            <div class="result-wrapper input-wrapper">
+              <p
+                name=""
+                id="result"
+                cols="30"
+                rows="10"
+                placeholder="Encrypted Message"
+              ></p>
+              <button
+              class="helper"
+              id="copy-btn"
+              aria-label="copy input"
+            >
+              <i class="fa-regular fa-copy"></i>
+              <span class="popuptext" id="copy-popup">copy</span>
+              <div class="user-alert">Copied!</div>
+            </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
     </main>
-    <footer>Megumi.K &copy;</footer>
+    <footer><p>Megumi.K &copy;</p>
+<a href="https://portfolio.kimuramegumi.site/" target="_blank">Visit Megumi's Portfolio <i class="fa-solid fa-up-right-from-square"></i></a>
+    </footer>
   </body>
 </html>

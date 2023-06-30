@@ -1,56 +1,30 @@
-.submit {
+#toggle {
   font-size: 1rem;
-  width: 100%;
-  padding: 0.35em 1.2em;
-  border: 0.1em solid var(--white);
-  margin-top: 1rem;
-  border-radius: 0.12em;
-  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 1.2em;
   color: var(--white);
   font-weight: bold;
-  height: 3rem;
   text-align: center;
   transition: all 0.2s;
-  background-color: var(--black);
   cursor: pointer;
+  border: none;
+  background: none;
+  margin: auto;
 }
 
-#erase-btn,
+#toggle:hover {
+  color: orange;
+}
+
 #copy-btn {
   background: none;
   border: none;
-  /* margin: 15px; */
-  /* position: absolute;
+  margin: 15px;
+  position: absolute;
   bottom: 0;
-  right: 0; */
+  right: 0;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
   display: block;
 }
-
-#erase-btn {
-  top: 0;
-  bottom: unset;
-}
-
-.circle-wrapper {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-.fa-circle-down {
-  font-size: 2rem;
-}
-
-.btn-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 5px;
-  position: relative;
-}
-/* 
-.fa-solid {
-  position: relative;
-} */

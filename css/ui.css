@@ -10,24 +10,16 @@ span {
   text-align: center;
   height: auto;
   position: absolute;
+  top: -25px;
+  right: -20px;
   transform: translate(-50%, 5%);
   color: var(--white);
   font-size: 0.8rem;
   background-color: var(--bg);
   padding: 5px;
-  border-radius: 5%;
 }
 
 /* CSS animation */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -37,24 +29,8 @@ span {
   }
 }
 
-#erase-btn:hover,
 #copy-btn:hover,
 button:hover {
   color: orange;
   border-color: orange;
-}
-#erase-btn:disabled,
-#copy-btn:disabled,
-button:disabled {
-  /* .submit:disabled,
-#copy-btn:disabled { */
-  background: none;
-  color: grey;
-  border-color: grey;
-  cursor: auto;
-}
-
-button:disabled:hover {
-  color: grey;
-  border-color: grey;
 }
