@@ -1,4 +1,4 @@
-#[Cipher](https://cipher.kimuramegumi.site/)
+[Cipher](https://cipher.megumi.no/)
 
 ![Homepage Preview](./asset/img/cipher.png)
 

@@ -1,25 +1,4 @@
-.helper:hover span {
-  display: block;
-  transform-origin: 100% 0%;
-  animation: fadeIn 0.3s ease;
-}
-
-span {
-  display: none;
-  font-family: sans-serif;
-  text-align: center;
-  height: auto;
-  position: absolute;
-  top: -25px;
-  right: -20px;
-  transform: translate(-50%, 5%);
-  color: var(--white);
-  font-size: 0.8rem;
-  background-color: var(--bg);
-  padding: 5px;
-}
-
-/* CSS animation */
+/* CSS animation
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -27,10 +6,4 @@ span {
   100% {
     opacity: 100%;
   }
-}
-
-#copy-btn:hover,
-button:hover {
-  color: orange;
-  border-color: orange;
-}
+} */

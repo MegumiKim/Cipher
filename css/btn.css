@@ -12,10 +12,6 @@
   margin: auto;
 }
 
-#toggle:hover {
-  color: orange;
-}
-
 #copy-btn {
   background: none;
   border: none;
@@ -27,4 +23,9 @@
   font-size: 1.2rem;
   cursor: pointer;
   display: block;
+}
+
+#toggle:hover,
+#copy-btn:hover {
+  color: orange;
 }
